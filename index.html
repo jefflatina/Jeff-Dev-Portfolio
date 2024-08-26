@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Jeff Dev | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/Favicon.png" type="image/png">
+</head>
+<body class="text-white font-sans scroll-smooth">
+
+    <header class="text-white top-0 left-0 w-full flex items-center justify-between px-6 py-5 md:px-20 md:py-5 bg-black-100 z-50">
+        <div class="flex items-center justify-between w-full md:w-auto">
+            <!-- Burger Menu Icon -->
+            <button class="md:hidden focus:outline-none" id="menu-toggle">
+                <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+    
+            <!-- Logo -->
+            <img class="h-5 w-auto mx-auto md:mx-0" src="img/Logo.png" alt="logo">
+        </div>
+    
+        <!-- Navigation Menu -->
+        <nav id="menu" class="hidden md:flex flex-col md:flex-row md:justify-center md:space-x-8 absolute md:relative top-16 left-0 w-full bg-black-100 md:w-auto z-50 transition-transform duration-300 ease-out -translate-y-full">
+            <a href="#about" class="text-nav py-2 md:py-0">About</a>
+            <a href="#expertise" class="text-nav py-2 md:py-0">Expertise</a>
+            <a href="#projects" class="text-nav py-2 md:py-0">Projects</a>
+        </nav>
+        
+    
+        <a href="#contact" class="hidden md:flex">
+            <div class="flex items-center border-2 border-main text-main px-4 py-2 rounded-full hover:border-main">Contact</div>
+        </a>
+    </header>
+    
+    
+
+    <section class="bg-black-100 h-auto md:h-screen flex flex-col justify-center items-center relative">
+        <div class="flex flex-col justify-center items-center text-center z-20 my-32 px-4 md:px-8 md:my-0">
+
+            <h1 class="text-5xl md:text-6xl font-bold mb-3 md:-mt-20">Welcome to my Digital Garden!</h1>
+            <p class="text-xl md:text-3xl mb-6 md:mb-8">A Web Developer's Portfolio</p>
+            <a href="Latina_Resume.pdf" download="Latina_Resume.pdf">
+                <button class="inline-flex items-center justify-center rounded-full px-5 py-3 gap-2 bg-main text-black text-base font-medium hover:bg-main">
+                    <span>Resume</span> 
+                    <svg class="h-5 w-auto" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"></path>
+                    </svg>
+                </button>
+            </a>
+        </div>
+    
+        <img src="img/Light.png" alt="Light Orb" class="absolute z-0 bottom-0 opacity-50 w-full md:w-auto">
+    </section>
+    
+
+    
+
+    <!-- ABOUT SECTION -->
+    <section class="bg-black-200 px-10 py-20 md:px-32 md:py-16 z-20" id="about">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div class="md:col-span-2 flex flex-col justify-center text-left">
+                <h2 class="text-4xl font-bold mb-6">About <span class="text-main">Jeff</span></h2>
+                <p class="text-base mb-10">Hey there! I’m Jeff Latina, a 22-year-old tech enthusiast from Mandaluyong City, Philippines. I recently graduated from Pamantasan ng Lungsod Maynila with a Bachelor’s Degree in Information Technology. I enjoy designing and coding websites and mobile applications. My hobbies include playing video games, listening to music, and watching horror movies. </p>
+                
+                <div class="inline-flex gap-2">
+                    <a href="https://www.facebook.com/JeffreyLatina/" target="_blank"><svg class="h-8" viewBox="0 0 144.083 144" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="M72.041 14.165c-31.94 0-57.833 25.894-57.833 57.834 0 31.939 25.893 57.836 57.833 57.836s57.835-25.896 57.835-57.836c-.001-31.94-25.895-57.834-57.835-57.834zM91.792 51.16a1 1 0 0 1-1 1H76.713v7.567h14.078a1 1 0 0 1 1 1v14.077a1 1 0 0 1-1 1H77.713v30.892a1 1 0 0 1-1 1H63.408a1 1 0 0 1-1-1V75.805h-9.117a1 1 0 0 1-1-1V60.728a1 1 0 0 1 1-1h9.117V54.02c0-.082.01-.161.028-.237.008-8.131 1.747-17.433 15.068-17.475.029-.002.06-.004.09-.004h13.197a1 1 0 0 1 1 1V51.16z" fill="#ffffff" class="fill-000000"></path></svg></a>
+                    <a href="https://www.instagram.com/jeffvlatina" target="_blank"><svg class="h-8" viewBox="0 0 144.083 144" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="M83.401 50.849h8.92v9.189h-8.92zM86.846 71.899c0 8.163-6.642 14.805-14.805 14.805-8.164 0-14.806-6.642-14.806-14.805 0-2.209.5-4.3 1.371-6.185h-9.784v25.414a4.189 4.189 0 0 0 4.184 4.184h38.07a4.189 4.189 0 0 0 4.184-4.184V65.715h-9.785a14.699 14.699 0 0 1 1.371 6.184z" fill="#ffffff" class="fill-000000"></path><path d="M72.042 80.704c4.854 0 8.805-3.95 8.805-8.805a8.776 8.776 0 0 0-2.547-6.185H65.782a8.777 8.777 0 0 0-2.546 6.185c0 4.855 3.95 8.805 8.806 8.805z" fill="#ffffff" class="fill-000000"></path><path d="M72.041 14.165c-31.94 0-57.833 25.894-57.833 57.834 0 31.939 25.893 57.836 57.833 57.836s57.835-25.896 57.835-57.836c-.001-31.94-25.895-57.834-57.835-57.834zm29.219 76.964c0 5.615-4.568 10.184-10.184 10.184h-38.07c-5.615 0-10.184-4.568-10.184-10.184V52.884c0-5.615 4.568-10.184 10.184-10.184h38.07c5.615 0 10.184 4.568 10.184 10.184v38.245z" fill="#ffffff" class="fill-000000"></path></svg></a>
+                    <a href="https://www.linkedin.com/in/jeffrey-latina/" target="_blank"><svg class="h-8" viewBox="0 0 144.083 144" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="M72.04 14.166c-31.939 0-57.833 25.894-57.833 57.833 0 31.94 25.893 57.835 57.833 57.835 31.941 0 57.836-25.895 57.836-57.835-.001-31.939-25.895-57.833-57.836-57.833zM48.042 40.25c3.934 0 7.125 2.91 7.125 6.5s-3.191 6.5-7.125 6.5c-3.936 0-7.125-2.91-7.125-6.5s3.189-6.5 7.125-6.5zm7.179 55.595H41.143V59.11h14.078v36.735zm47.838 0H88.913v-20.2c0-2.306-.428-3.938-1.281-4.896-.854-.956-2.053-1.436-3.596-1.436-1.707 0-3.092.646-4.152 1.938-1.061 1.292-1.59 3.609-1.59 6.953v17.641H64.215V59.11h13.109v5.983c1.959-2.443 3.943-4.19 5.949-5.24 2.006-1.049 4.449-1.573 7.332-1.573 3.898 0 6.947 1.158 9.15 3.476 2.201 2.317 3.303 5.897 3.303 10.74v23.349z" fill="#ffffff" class="fill-000000"></path></svg></a>
+                </div>
+                    
+            </div>
+
+            <div class="flex flex-col justify-center">
+                <img src="img/Picture.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERTISE SETION -->
+    <section class="bg-black-100 px-10 py-20 md:px-32 md:py-16 z-20" id="expertise">
+        <div class="text-center">
+            <h2 class="text-4xl font-bold mb-5 text-main">Expertise</h2>
+            <p class="text-xl mb-16">With a decade of experience in technology, I've honed a diverse skill set through continuous learning</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-4">
+
+            <!-- Front End Development Card -->
+            <div class="bg-black-300 p-5 text-center flex flex-col justify-center items-center rounded-lg">
+                <svg class="h-16 w-auto mb-4 text-main" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 9.75 16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0 0 20.25 18V6A2.25 2.25 0 0 0 18 3.75H6A2.25 2.25 0 0 0 3.75 6v12A2.25 2.25 0 0 0 6 20.25Z"></path>
+                </svg>
+                <h3 class="text-xl font-semibold mb-4">Front End Development</h3>
+                <p class="mb-8 text-base">Building websites and mobile applications through coding</p>
+                <div class="flex flex-wrap justify-center gap-2 text-white text-sm mb-4">
+                    <span class="border-2 border-main rounded-full py-1 px-3">HTML/CSS/JS</span>
+                    <span class="border-2 border-main rounded-full py-1 px-3">Tailwind</span>
+                    <span class="border-2 border-main rounded-full py-1 px-3">Bootstrap</span>
+                    <span class="border-2 border-main rounded-full py-1 px-3">XML</span>
+                </div>
+            </div>
+            
+            <!-- Wordpress Dev Card -->
+            <div class="bg-black-300 p-5 text-center flex flex-col justify-center items-center rounded-lg">
+                <svg class="h-16 w-auto mb-4 text-main" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.098 19.902a3.75 3.75 0 0 0 5.304 0l6.401-6.402M6.75 21A3.75 3.75 0 0 1 3 17.25V4.125C3 3.504 3.504 3 4.125 3h5.25c.621 0 1.125.504 1.125 1.125v4.072M6.75 21a3.75 3.75 0 0 0 3.75-3.75V8.197M6.75 21h13.125c.621 0 1.125-.504 1.125-1.125v-5.25c0-.621-.504-1.125-1.125-1.125h-4.072M10.5 8.197l2.88-2.88c.438-.439 1.15-.439 1.59 0l3.712 3.713c.44.44.44 1.152 0 1.59l-2.879 2.88M6.75 17.25h.008v.008H6.75v-.008Z"></path>
+                </svg>
+                <h3 class="text-xl font-semibold mb-4">Wordpress Development</h3>
+                <p class="mb-8 text-base">Utilizing Wordpress to create functional websites</p>
+                <div class="flex flex-wrap justify-center gap-2 text-white text-sm mb-4">
+                    <span class="border-2 border-main rounded-full py-1 px-3">Theme Customizations</span>
+                    <span class="border-2 border-main rounded-full py-1 px-3">SEO</span>
+                    <span class="border-2 border-main rounded-full py-1 px-3">Google Sitekit</span>
+                    <span class="border-2 border-main rounded-full py-1 px-3">Plugins</span>
+                </div>
+            </div>
+            
+            <!-- UI UX Designer Card -->
+            <div class="bg-black-300 p-5 text-center flex flex-col justify-center items-center rounded-lg">
+                <svg class="h-16 w-auto mb-4 text-main" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42"></path>
+                </svg>
+
+
+                <h3 class="text-xl font-semibold mb-4">UI/UX Designer</h3>
+                <p class="mb-8 text-base">Designing brands and identities to make them standout</p>
+                <div class="flex flex-wrap justify-center gap-2 text-white text-sm mb-4">
+                    <span class="border-2 border-main rounded-full py-1 px-3">Figma</span>
+                    <span class="border-2 border-main rounded-full py-1 px-3">Adobe Photoshop</span>
+                    <span class="border-2 border-main rounded-full py-1 px-3">Microsoft Publisher</span>
+                    <span class="border-2 border-main rounded-full py-1 px-3">Canva</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="bg-black-200 px-10 py-20 md:px-32 md:py-16 z-20" id="projects">
+        <div class="text-center">
+            <h2 class="text-4xl font-bold mb-5 text-main">Projects</h2>
+            <p class="text-xl mb-16">Take a look at what I’ve created through the years of practice and experience</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
+            <!-- Card 1 -->
+            <div class="relative bg-black-300 text-center flex flex-col justify-center items-center rounded-lg overflow-hidden">
+                <img class="full" src="img/E-Philippines.jpg" alt="">
+                <div class="p-5">
+                    <h3 class="text-base font-bold mb-4">E-Philippines Adventure Travels and Destinations</h3>
+                    <p class="text-base mb-6">An adventure travel agency website that offers a booking system and travel planning</p>
+                    <a class="inline-flex items-center gap-2 text-nav text-sm" href="https://e-philippines.com.ph/" target="_blank">
+                            View Live Site 
+                            <span><svg class="h-5" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"></path></svg></span>
+                     </a>
+                </div>
+
+                <div class="absolute top-0 left-0 px-2 py-4 flex-wrap gap-2 text-white text-sm mb-4">
+                    <span class="border-2 border-main rounded-full py-1 px-3">Wordpress</span>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="relative bg-black-300 text-center flex flex-col justify-center items-center rounded-lg overflow-hidden">
+                <img class="full" src="img/Uniq.jpg" alt="">
+                <div class="p-5">
+                    <h3 class="text-base font-bold mb-4">UNIQ: AI Plagiarism Detector Mobile Application</h3>
+                    <p class="text-base mb-6">A plagiarism checker mobile application that uses NLP and Word Embedding Techniques</p>
+                    <a class="inline-flex items-center gap-2 text-nav text-sm" href="https://ieeexplore.ieee.org/document/10612386" target="_blank">
+                            View Documentation 
+                            <span><svg class="h-5" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"></path></svg></span>
+                     </a>
+                </div>
+
+                <div class="absolute top-0 left-0 px-2 py-4 flex-wrap gap-2 text-white text-sm mb-4">
+                    <span class="border-2 border-main rounded-full py-1 px-3">Front End Dev</span>
+                    <span class="border-2 border-main rounded-full py-1 px-3">UI/UX</span>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="relative bg-black-300 text-center flex flex-col justify-center items-center rounded-lg overflow-hidden">
+                <img class="full" src="img/Glamour.jpg" alt="">
+                <div class="p-5">
+                    <h3 class="text-base font-bold mb-4">Glamour: Web Event Management System</h3>
+                    <p class="text-base mb-6">An event management system that provides booking system and AI pricing generator</p>
+                    <a class="inline-flex items-center gap-2 text-nav text-sm" href="https://youtu.be/-4iIWgEHqFw?si=KoKX_4dodMEa3OPF" target="_blank">
+                            View System Walkthrough 
+                            <span><svg class="h-5" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"></path></svg></span>
+                     </a>
+                </div>
+
+                <div class="absolute top-0 left-0 px-2 py-4 flex-wrap gap-2 text-white text-sm mb-4">
+                    <span class="border-2 border-main rounded-full py-1 px-3">Fullstack Dev</span>
+                    <span class="border-2 border-main rounded-full py-1 px-3">UI/UX</span>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="relative bg-black-300 text-center flex flex-col justify-center items-center rounded-lg overflow-hidden">
+                <img class="full" src="img/Quicard.jpg" alt="">
+                <div class="p-5">
+                    <h3 class="text-base font-bold mb-4">Quicard: A Flashcard Mobile Application</h3>
+                    <p class="text-base mb-6">An interactice quiz mobile application featuring flashcards and engaging game elements</p>
+                    
+                </div>
+
+                <div class="absolute top-0 left-0 px-2 py-4 flex-wrap gap-2 text-white text-sm mb-4">
+                    <span class="border-2 border-main rounded-full py-1 px-3">Fullstack Dev</span>
+                    <span class="border-2 border-main rounded-full py-1 px-3">UI/UX</span>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="relative bg-black-300 text-center flex flex-col justify-center items-center rounded-lg overflow-hidden">
+                <img class="full" src="img/Hachix.jpg" alt="">
+                <div class="p-5">
+                    <h3 class="text-base font-bold mb-4">Hachix: A Real-Time Dashboard and Inventory System</h3>
+                    <p class="text-base mb-6">A real-time dashboard system that tracks sales reports and provides an inventory system</p>
+                    
+                </div>
+
+                <div class="absolute top-0 left-0 px-2 py-4 flex-wrap gap-2 text-white text-sm mb-4">
+                    <span class="border-2 border-main rounded-full py-1 px-3">Backend Dev</span>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="relative bg-black-300 text-center flex flex-col justify-center items-center rounded-lg overflow-hidden">
+                <img class="full" src="img/Plantitas.jpg" alt="">
+                <div class="p-5">
+                    <h3 class="text-base font-bold mb-4">Plantitas: An Indoor Plant E-Commerce Website</h3>
+                    <p class="text-base mb-6">An E-Commerce website that offers plant shopping experiences and secure payment options</p>
+                   
+                </div>
+
+                <div class="absolute top-0 left-0 px-2 py-4 flex-wrap gap-2 text-white text-sm mb-4">
+                    <span class="border-2 border-main rounded-full py-1 px-3">Wordpress</span>
+                </div>
+            </div>
+
+
+            
+
+
+        </div>
+
+        <p class="text-center">Want to see more? <span class="text-main"><a href="mailto:jeffreyvlatina09@gmail.com">Email me</a></span></p>
+
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="bg-main px-10 py-20 md:px-32 md:py-16 z-20" id="contact">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div class="md:col-span-2 flex flex-col justify-center text-center text-black md:text-left">
+                <h2 class="text-4xl font-bold mb-4">Get in Touch</h2>
+                <p class="text-xl mb-10">Tell me what’s on your mind and let’s work on it together!</p>                 
+            </div>
+
+            <a class="flex flex-col justify-center px-10" href="mailto:jeffreyvlatina09@gmail.com">
+                <button class="items-center justify-center rounded-full p-3 bg-white text-black text-base font-medium">Email me</button>
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <section class="bg-black-100 flex justify-center items-center py-10">
+        <p class="text-sm">Copyright © 2024 Jeff Latina. All rights reserved.</p>
+    </section>
+    
+    <script>
+       document.getElementById('menu-toggle').addEventListener('click', function() {
+        const menu = document.getElementById('menu');
+        menu.classList.toggle('hidden');
+        menu.classList.toggle('flex');
+        menu.classList.toggle('mt-56');
+        menu.classList.toggle('px-6'); 
+        menu.classList.toggle('pb-2');
+        menu.classList.toggle('translate-y-0');
+        menu.classList.toggle('-translate-y-full');
+        });
+    </script>
+
+</body>
+</html>
